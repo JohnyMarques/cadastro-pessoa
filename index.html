@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+    <header>
+        <img src="./images/logo.png" alt="logo">
+    <h1>Bem vindo ao sistema de cadastramento!</h1>
+    </header>
+    <form>
+        <label for="nome">Digite seu nome: </label>
+        <input type="text" id="nome" required>
+    
+        <div class="form-ajustar">
+            <div>
+                <label for="ddd">DDD: </label>
+                <input type="tel" id="ddd" required min="0" max="2">
+            </div>
+    
+            <div>
+                <label for="numCompleto">Número: </label>
+                <input type="tel" id="numCompleto" required min="8" max="9">
+            </div>
+        </div>
+    
+        <button type="submit">Cadastrar</button>
+    </form>
+    <div id="resultado" class="resultado"></div>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>
+                    Nome: 
+                </th>
+                <th>
+                    Número: 
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+
+        <tfoot>
+<tr>
+    <td>
+
+    </td>
+</tr>
+        </tfoot>
+    </table>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
