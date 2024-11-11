@@ -27,7 +27,7 @@ function formatPhone(input) {
      
       const phonePattern = /^\(\d{2}\) \d{5}-\d{4}$/;
       if (!phonePattern.test(phone)) {
-        alert("Erro: O número de telefone deve estar no formato (DDD) NNNNN-NNNN.");
+        alert("O número de telefone deve estar no formato (DDD) NNNNN-NNNN.");
         return;
       }
   
