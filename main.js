@@ -45,7 +45,7 @@ function formatPhone(input) {
       }
   
       if (duplicate) {
-        alert("Erro: Este número de telefone já foi cadastrado.");
+        alert("Este número de telefone já foi cadastrado.");
       } else {
         // Criando uma nova linha na tabela
         const newRow = table.insertRow();
