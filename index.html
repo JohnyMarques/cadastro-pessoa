@@ -10,13 +10,12 @@
 
   <h1>Agenda de Contatos</h1>
 
-  <!-- Formulário para adicionar contato -->
-  <form id="contactForm">
+<!-- Formulário para adicionar contato -->
+<form id="contactForm">
     <input type="text" id="name" placeholder="Nome" required>
-    <input type="text" id="phone" placeholder="Telefone" required>
+    <input type="text" id="phone" placeholder="Telefone" required maxlength="15" oninput="formatPhone(this)">
     <button type="button" onclick="addContact()">Cadastrar</button>
   </form>
-
   <!-- Tabela para exibir contatos -->
   <table id="contactsTable">
     <thead>
